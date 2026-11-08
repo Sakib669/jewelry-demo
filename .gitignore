@@ -33,7 +33,9 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
-# vercel
+# Screenshots
+screenshot_*.png
+screenshot.png
 .vercel
 
 # typescript

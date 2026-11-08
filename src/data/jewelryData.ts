@@ -19,7 +19,7 @@ export const FEATURED_COLLECTIONS: CollectionItem[] = [
     title: "Bracelets",
     tag: "Open Page",
     itemCount: 16,
-    image: "https://images.unsplash.com/photo-1611591475806-c8541a7c3ce9?q=80&w=1000&auto=format&fit=crop",
+    image: "/images/collection-bracelets.jpg",
     href: "#bracelets",
     description: "Sculptural links, hand-woven cuffs, and delicate gold chains designed to grace every gesture.",
   },
@@ -28,7 +28,7 @@ export const FEATURED_COLLECTIONS: CollectionItem[] = [
     title: "Rings",
     tag: "Open Page",
     itemCount: 22,
-    image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=1000&auto=format&fit=crop",
+    image: "/images/collection-rings.jpg",
     href: "#rings",
     description: "Timeless solitaire diamonds, hammered eternity bands, and bespoke ceremonial heirlooms.",
   },
@@ -37,7 +37,7 @@ export const FEATURED_COLLECTIONS: CollectionItem[] = [
     title: "Earrings",
     tag: "Open Page",
     itemCount: 18,
-    image: "https://images.unsplash.com/photo-1630019852942-f89202989a59?q=80&w=1000&auto=format&fit=crop",
+    image: "/images/collection-earrings.jpg",
     href: "#earrings",
     description: "Baroque pearls, cascading diamond drops, and architectural gold hoops catching ambient light.",
   },
@@ -53,11 +53,8 @@ export const PRODUCTS: Product[] = [
     category: "earrings",
     rating: 4.9,
     reviewsCount: 38,
-    image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=1000&auto=format&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=1000&auto=format&fit=crop",
-    ],
+    image: "/images/product-heart-locket.jpg",
+    gallery: ["/images/product-heart-locket.jpg"],
     description:
       "Handcrafted in 18k yellow gold, this romantic puffed heart drop features a delicate hidden hinge compartment, celebrating cherished memories with radiant warmth.",
     material: "18k Recycled Yellow Gold",
@@ -75,11 +72,8 @@ export const PRODUCTS: Product[] = [
     category: "necklaces",
     rating: 5.0,
     reviewsCount: 52,
-    image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=1000&auto=format&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1611591475806-c8541a7c3ce9?q=80&w=1000&auto=format&fit=crop",
-    ],
+    image: "/images/product-layer-necklace.jpg",
+    gallery: ["/images/product-layer-necklace.jpg"],
     description:
       "A harmonious pairing of two hand-assembled curb and rope chains punctuated by a brilliant-cut bezel diamond and interlocking solar rings in solid 18k gold.",
     material: "18k Solid Yellow Gold",
@@ -97,11 +91,8 @@ export const PRODUCTS: Product[] = [
     category: "necklaces",
     rating: 4.8,
     reviewsCount: 29,
-    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=1000&auto=format&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=1000&auto=format&fit=crop",
-    ],
+    image: "/images/product-circle-pendant.jpg",
+    gallery: ["/images/product-circle-pendant.jpg"],
     description:
       "A continuous pavé halo of sustainably sourced conflict-free diamonds suspended from an elongated anchor link chain. Minimalist geometry elevated to pure art.",
     material: "18k Fairmined Yellow Gold",
@@ -118,11 +109,8 @@ export const PRODUCTS: Product[] = [
     category: "bracelets",
     rating: 4.9,
     reviewsCount: 44,
-    image: "https://images.unsplash.com/photo-1611591475806-c8541a7c3ce9?q=80&w=1000&auto=format&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1611591475806-c8541a7c3ce9?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=1000&auto=format&fit=crop",
-    ],
+    image: "/images/product-gold-bracelet.jpg",
+    gallery: ["/images/product-gold-bracelet.jpg"],
     description:
       "Dual stacked bangles sculpted with ancient Florentine hand-engraved striations, diffusing candlelit shimmer along the wrist with an easy snap clasp.",
     material: "18k Brushed & Chiseled Gold",
@@ -139,10 +127,8 @@ export const PRODUCTS: Product[] = [
     category: "rings",
     rating: 5.0,
     reviewsCount: 19,
-    image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=1000&auto=format&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=1000&auto=format&fit=crop",
-    ],
+    image: "/images/hero-ring.jpg",
+    gallery: ["/images/hero-ring.jpg"],
     description:
       "A magnificent center champagne smoky quartz surrounded by oval-cut prasiolites set in intricate reticulated filigree gold work.",
     material: "18k Filigree Yellow Gold",
@@ -158,10 +144,8 @@ export const PRODUCTS: Product[] = [
     category: "earrings",
     rating: 4.9,
     reviewsCount: 27,
-    image: "https://images.unsplash.com/photo-1630019852942-f89202989a59?q=80&w=1000&auto=format&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1630019852942-f89202989a59?q=80&w=1000&auto=format&fit=crop",
-    ],
+    image: "/images/collection-earrings.jpg",
+    gallery: ["/images/collection-earrings.jpg"],
     description:
       "Organic lustrous freshwater baroque pearls gracefully anchored beneath hand-beaten gold caps. Lightweight and comfortable for day-to-evening allure.",
     material: "18k Gold Plated Sterling Silver",
@@ -175,7 +159,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: "t1",
     author: "Emily G.",
     role: "Verified Collector, Milan",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=300&auto=format&fit=crop",
+    avatar: "/images/testimonial-emily.jpg",
     quote:
       "\"Absolutely in love with my custom necklace from ÉLÉOR. The attention to detail, tactile weight of the 18k gold, and the quality of the materials surpassed my expectations.\"",
     rating: 5,
@@ -185,7 +169,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: "t2",
     author: "Olivia S.",
     role: "Art Curator, Zurich",
-    avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=300&auto=format&fit=crop",
+    avatar: "/images/testimonial-olivia.jpg",
     quote:
       "\"I have been a patron of this atelier for three years. Each bespoke ring is an architectural sculpture. The customer concierge makes bespoke sizing effortless.\"",
     rating: 5,
@@ -193,9 +177,9 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: "t3",
-    author: "Marcus V.",
-    role: "Architectural Director, Paris",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300&auto=format&fit=crop",
+    author: "Antoine & Sophie",
+    role: "Private Patrons, Paris",
+    avatar: "/images/designer-portrait.jpg",
     quote:
       "\"Commissioned wedding bands for our anniversary. The Florentine brushed texture catches ambient sunlight in a way photos cannot capture. Exquisite heirloom craft.\"",
     rating: 5,
@@ -211,7 +195,7 @@ export const ATELIER_STORY = {
     "Born into four generations of Valenza jewelry masters, Antoine merges renaissance hand-filigree techniques with clean contemporary architecture. Every piece begins with a hand-drawn gouache rendering and responsibly sourced fairmined metals.",
   bioParagraph2:
     "Our studio rejects mass production. Instead, each collection is produced in small, numbered releases where master artisans hand-set every stone under microscopes, ensuring durability across generations.",
-  portrait: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1000&auto=format&fit=crop",
+  portrait: "/images/designer-portrait.jpg",
   metrics: [
     { value: "+300", label: "Successful projects", detail: "Bespoke high jewelry commissions" },
     { value: "+10", label: "Awards for the best design", detail: "Geneva & Milan Joaillerie Honors" },
@@ -225,5 +209,5 @@ export const HOLIDAY_PROMO = {
     "We have selected for you the best collection for the upcoming holiday with a pleasant discount. Every heirloom arrives wrapped in our signature velvet keepsake casket.",
   discountTag: "Exclusive 25% - 50% Privileged Savings",
   ctaText: "Explore More",
-  heroImage: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=1200&auto=format&fit=crop",
+  heroImage: "/images/holiday-diamond-ring.jpg",
 };

@@ -1,37 +1,37 @@
 "use client";
 
-import React, { useRef } from "react";
+import React from "react";
 import Image from "next/image";
 import { useShop } from "@/context/ShopContext";
 import { ATELIER_LOCATION } from "@/data/jewelryData";
 import { Play, ArrowRight } from "lucide-react";
 
 export default function HeroSection() {
-  const { setIsVideoModalOpen, setQuickViewProduct } = useShop();
+  const { setIsVideoModalOpen } = useShop();
 
   return (
     <section
       id="hero"
-      className="relative w-full min-h-[92vh] flex flex-col justify-between overflow-hidden bg-gradient-to-b from-[#6b4933] via-[#7d563c] to-[#a37956] text-white pt-8 pb-10"
+      className="relative w-full min-h-[680px] lg:h-[780px] flex flex-col justify-between overflow-hidden bg-[#3b2315] text-white pt-6 pb-8 sm:pb-12"
     >
-      {/* Background Hero Jewelry Imagery */}
+      {/* Background Hero Jewelry Artwork */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=85&w=2000&auto=format&fit=crop"
-          alt="ÉLÉOR Fine High Jewelry Masterpiece"
+          src="/images/hero-ring.jpg"
+          alt="ÉLÉOR Haute Joaillerie Masterpiece Ring"
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center mix-blend-screen opacity-90 scale-105 transition-transform duration-1000 ease-out"
+          className="object-cover object-center mix-blend-lighten opacity-80 scale-100 sm:scale-105 transition-transform duration-1000 ease-out"
         />
-        {/* Cinematic ambient vignette & warm golden light overlay */}
-        <div className="absolute inset-0 bg-radial-[circle_at_60%_35%] from-transparent via-[#452818]/60 to-[#2b170c]/90 pointer-events-none" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#25140b] via-transparent to-[#2a170d]/80 pointer-events-none" />
+        {/* Warm golden and chocolate ambient gradients */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#2a170d]/90 via-[#3a2012]/60 to-[#22120a]/95 pointer-events-none" />
+        <div className="absolute inset-0 bg-radial-[circle_at_50%_40%] from-amber-600/15 via-transparent to-black/40 pointer-events-none" />
       </div>
 
       {/* Top Monumental Headline: "Jewelry" */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-2 sm:pt-4">
-        <h1 className="font-serif text-[clamp(4.2rem,14vw,11.5rem)] leading-[0.88] tracking-[-0.03em] text-[#FFF7EC] drop-shadow-sm font-light select-none">
+        <h1 className="font-serif text-[clamp(3.8rem,13vw,10.5rem)] leading-[0.9] tracking-[-0.03em] text-[#FFF9F2] drop-shadow-md font-light select-none">
           Jewelry
         </h1>
       </div>
@@ -40,8 +40,8 @@ export default function HeroSection() {
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-auto pt-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
           {/* Left Column: Description + CTA + Video Preview Inset */}
-          <div className="lg:col-span-5 flex flex-col space-y-6">
-            <p className="text-sm sm:text-base text-[#F5EBE1] font-light leading-relaxed max-w-md drop-shadow-xs">
+          <div className="lg:col-span-5 flex flex-col space-y-5">
+            <p className="text-xs sm:text-sm text-[#F5EBE1] font-light leading-relaxed max-w-sm drop-shadow-xs">
               Our curated collection of fine jewelry is designed to captivate and
               celebrate the unique essence of every individual.
             </p>
@@ -49,35 +49,35 @@ export default function HeroSection() {
             <div>
               <a
                 href="#arrivals"
-                className="inline-flex items-center justify-center px-7 py-3.5 bg-[#9E3831] hover:bg-[#8B1D24] text-white text-xs tracking-[0.14em] uppercase font-medium rounded-xs shadow-md transition-all luxury-btn"
+                className="inline-flex items-center justify-center px-7 py-3 bg-[#9E3831] hover:bg-[#8B1D24] text-white text-xs tracking-[0.14em] uppercase font-medium rounded-xs shadow-md transition-all luxury-btn"
               >
                 Open Store
               </a>
             </div>
 
             {/* Inset Video Preview Card */}
-            <div className="pt-2">
+            <div className="pt-1">
               <div
                 onClick={() => setIsVideoModalOpen(true)}
-                className="group relative w-64 sm:w-72 h-36 sm:h-40 rounded-sm overflow-hidden cursor-pointer shadow-xl border border-white/20 bg-black/30 backdrop-blur-xs transition-transform duration-500 hover:scale-[1.02]"
+                className="group relative w-full sm:w-64 h-32 sm:h-36 rounded-xs overflow-hidden cursor-pointer shadow-xl border border-white/20 bg-black/40 backdrop-blur-xs transition-transform duration-500 hover:scale-[1.02]"
               >
                 <Image
-                  src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=600&auto=format&fit=crop"
+                  src="/images/hero-model.jpg"
                   alt="Model wearing handmade fine jewelry"
                   fill
-                  sizes="300px"
+                  sizes="(max-width: 640px) 100vw, 300px"
                   className="object-cover object-center group-hover:scale-105 transition-transform duration-700 opacity-90"
                 />
-                <div className="absolute inset-0 bg-black/25 group-hover:bg-black/15 transition-colors" />
+                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/15 transition-colors" />
 
                 {/* Frosted Play Icon Button */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-12 h-12 rounded-full bg-white/70 backdrop-blur-md flex items-center justify-center text-[#131416] shadow-lg group-hover:scale-110 group-hover:bg-white transition-all duration-300">
-                    <Play className="w-5 h-5 fill-current ml-0.5" />
+                  <div className="w-11 h-11 rounded-full bg-white/80 backdrop-blur-md flex items-center justify-center text-[#131416] shadow-lg group-hover:scale-110 group-hover:bg-white transition-all duration-300">
+                    <Play className="w-4 h-4 fill-current ml-0.5" />
                   </div>
                 </div>
 
-                <div className="absolute bottom-2.5 left-3 text-[11px] tracking-wider text-white/90 font-light flex items-center space-x-1.5">
+                <div className="absolute bottom-2 left-3 text-[10px] tracking-wider text-white/90 font-light flex items-center space-x-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                   <span>Atelier Craftsmanship Film</span>
                 </div>
@@ -85,35 +85,35 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Middle Spacer for the Centerpiece Ring */}
-          <div className="hidden lg:block lg:col-span-3 min-h-[140px]" />
+          {/* Middle Spacer for Desktop centering */}
+          <div className="hidden lg:block lg:col-span-3 min-h-[120px]" />
 
           {/* Right Column: Floating 50% Promo Card & Address */}
-          <div className="lg:col-span-4 flex flex-col items-start lg:items-end space-y-6">
+          <div className="lg:col-span-4 flex flex-col items-start lg:items-end space-y-5">
             {/* Promo Card: "Only today - 50% OFF" */}
             <div
               onClick={() => {
                 const arrivalSection = document.getElementById("arrivals");
                 arrivalSection?.scrollIntoView({ behavior: "smooth" });
               }}
-              className="w-full sm:w-72 bg-[#8B1D24] text-white p-5 rounded-xs shadow-2xl cursor-pointer hover:bg-[#78171E] transition-all duration-300 hover:shadow-red-950/40 hover:-translate-y-1 group"
+              className="w-full sm:w-64 bg-[#8B1D24] text-white p-4 sm:p-5 rounded-xs shadow-2xl cursor-pointer hover:bg-[#78171E] transition-all duration-300 hover:shadow-red-950/40 hover:-translate-y-1 group border border-white/10"
             >
-              <div className="flex items-center justify-between mb-4">
-                <span className="font-serif text-lg tracking-wide font-normal">
+              <div className="flex items-center justify-between mb-3">
+                <span className="font-serif text-base sm:text-lg tracking-wide font-normal">
                   Only today - 50% OFF
                 </span>
-                <div className="w-8 h-8 rounded-full bg-white text-[#8B1D24] flex items-center justify-center group-hover:translate-x-0.5 transition-transform">
-                  <ArrowRight className="w-4 h-4" />
+                <div className="w-7 h-7 rounded-full bg-white text-[#8B1D24] flex items-center justify-center group-hover:translate-x-0.5 transition-transform shrink-0">
+                  <ArrowRight className="w-3.5 h-3.5" />
                 </div>
               </div>
 
               {/* Bracelet Preview Thumbnail */}
-              <div className="relative w-full h-24 rounded-xs overflow-hidden bg-black/20 border border-white/10">
+              <div className="relative w-full h-20 sm:h-24 rounded-xs overflow-hidden bg-black/30 border border-white/10">
                 <Image
-                  src="https://images.unsplash.com/photo-1611591475806-c8541a7c3ce9?q=80&w=500&auto=format&fit=crop"
+                  src="/images/hero-bracelet-deal.jpg"
                   alt="Gold Bracelet Preview 50% Off"
                   fill
-                  sizes="250px"
+                  sizes="(max-width: 640px) 100vw, 250px"
                   className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
