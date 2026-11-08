@@ -153,7 +153,7 @@ export default function Footer() {
 
         {/* Bottom copyright line */}
         <div className="pt-8 text-center text-xs text-[#5C5A56] font-light">
-          <p>Copyright © {new Date().getFullYear()} {BRAND_NAME} Atelier. All Rights Reserved.</p>
+          <p>Copyright © 2026 {BRAND_NAME} Atelier. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
